@@ -75,7 +75,7 @@ $btnregulamento = "regulamento-graduarte-pos-graduacao-e-curso-de-ingles.pdf";
 
     <?php if($_REQUEST['e'] === 'e') : ?>
     <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
-        <strong>Você já se registrou nessa campanha, aguarde nosso contato.</strong>
+        <strong>Você já se registrou nessa campanha, aguarde nosso contatoo.</strong>
     </div>
     <?php endif; ?>
 
