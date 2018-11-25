@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*$red: #e66053;
+$black: #4E4F4A;
+$cream: #F6E9DC;
+
+$thin-border: 2px solid #e66053;*/
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-image: url(../img/bg_fundo_xl2.jpg) ;
+  color: #4E4F4A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #F6E9DC;
+  box-shadow:
+     0px 0px 0px 2px #e66053,
+     10px 10px 20px 10px fade-out(#4E4F4A, .5);
+  flex-basis: 980px;
+  opacity: 0.85;
+
+
+}
+
+caption {
+  caption-side: top; 
+}
+
+
+
+.calendar {
+  table-display: fixed;
+  border: 2px solid #e66053;
+  width: 100%;
+}
+
+.calendar__day__header,
+.calendar__day__cell {
+  border: 2px solid #e66053;
+  text-align: center;
+  /*width: 100% / 7;*/
+  width: 10%;
+  vertical-align: middle;
+}
+
+.calendar__day__header,
+.calendar__day__cell:first-child {
+  /*border-left: none;*/
+}
+
+.calendar__day__header,
+.calendar__day__cell:last-child {
+  border-right: none;
+}
+
+
+
+
+
+.calendar__day__header,
+.calendar__day__cell {
+  padding: .75rem 0 1.5rem;
+}
+
+.calendar__banner--month {
+  border: 2px solid #e66053;
+  border-bottom: none;
+  text-align: center;
+  padding: .75rem;
+}
+
+.calendar__banner--month h1 {
+
+  background-color: #4E4F4A;
+    color: #F6E9DC;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+
+}
+
+
+.calendar__day__header {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.calendar__day__cell {
+  font-size: 4rem;
+  position: relative;
+}
+
+/*tr:nth-child(odd) > .calendar__day__cell:nth-child(odd) {
+  color: #e66053;
+}
+
+tr:nth-child(even) > .calendar__day__cell:nth-child(even) {
+  color: #e66053;
+}*/
+
+
+
+
+.calendar__day__cell[data-moon-phase] {
+  background-color: #e66053;
+  color: #4E4F4A;
+}
+/*.calendar__day__cell[data-moon-phase-down] {
+  background-color: #e66053;
+  color: #4E4F4A;
+}*/
+
+.calendar__day__cell[data-moon-phase]:after {
+  content: attr(data-moon-phase);
+    color: #F6E9DC;
+    display: block;
+    font-weight: 400;
+    font-size: .75rem;
+    position: absolute;
+    bottom: : 0;
+    width: 100%;
+    height: 1rem;
+    text-transform: uppercase;
+
+}
+
+.data-moon-phase:after {
+  color: #F6E9DC;
+    display: block;
+    font-weight: 400;
+    font-size: .75rem;
+    position: absolute;
+    bottom: : 0;
+    width: 100%;
+    height: 1rem;
+    text-transform: uppercase;
+}
+
+/*.calendar__day__cell[data-moon-phase-up]:after {
+  content: attr(data-moon-phase-up);
+    color: #F6E9DC;
+    display: block;
+    font-weight: 400;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    text-transform: uppercase;
+
+}*/
+
+
+.calendar__day__cell[data-bank-holiday] {
+  background-color: #4E4F4A;
+  border-color: #4E4F4A;
+  border-bottom: none;
+  color: #F6E9DC;
+}
+
+
+.calendar__day__cell[data-bank-holiday]:after {
+  content: attr(data-bank-holiday);
+    color: #F6E9DC;
+    display: block;
+    font-size: .75rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    text-transform: uppercase;
+}
+
+
+.figure {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 155px;  
+  
+}
+

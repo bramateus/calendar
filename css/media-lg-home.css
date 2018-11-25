@@ -1,0 +1,78 @@
+@media (min-width: 1200px) and (max-width: 1440px) {
+    body {
+        background-origin: content-box;
+        background: url('../img/bg_fundo_xl2.jpg') no-repeat center top;
+    }
+
+    .bodytkp {
+        background-origin: content-box;
+        background: url('../img/tkp_fundo_xl.jpg') no-repeat center top !important;
+    }
+
+    .box {
+        border-radius: 20px;
+        max-width: 340px;
+
+        right: 60px;
+    }
+
+    .box p {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: normal;
+        /*padding: 20px 10px;*/
+        text-align: center;
+    }
+
+    .box form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .conteudo-a {
+        zoom: 70%;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
+    .conteudo-b {
+        margin-top: 10px;
+    }
+
+
+    .conteudo-m {
+        visibility: hidden;
+        display: none;
+    }
+
+    .linha-cinza {
+        background: #3a3a3a;
+        font-size: 40px;
+    }
+
+    .infos {
+        color: #FFF;
+        margin-bottom: -20px;
+    }
+
+    .infos p {
+        text-align: justify;
+    }
+
+    .infos h2 span {
+        color: #e50e4b;
+    }
+
+    .tkp-conteudo-a {
+        visibility: hidden;
+    }
+
+    .tkp-conteudo-b {
+        visibility: hidden;
+    }
+
+    h6 {
+        color: #e50e4b;
+    }
+
+}

@@ -1,0 +1,87 @@
+@media (min-width: 321px) and (max-width: 375px) {
+    body {
+        background-origin: content-box;
+        background: url('../img/bg_fundo_xl2.jpg') no-repeat center top;
+    }
+
+   
+    .bodytkp {
+        background-origin: content-box;
+        background: url('../img/tkp_fundo_xss.jpg') no-repeat center top !important;
+    }
+
+    .box {
+        display: none;
+        border-radius: 20px;
+        max-width: 340px;
+        margin: 0 0;
+        top: 15px;
+        left: 15px;
+        position: relative!important;
+    }
+
+    .box p {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .box form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .btn-formulario-display {
+        display: inline;
+        padding: 0 100px 0 0;
+    }
+
+    .btn-close {
+        display: inline;
+    }
+
+
+    .conteudo-a {
+        margin-top: 0px;
+        width: 70%;
+      
+
+
+    }
+
+    .conteudo-b {
+        margin-top: 400px;
+        visibility: hidden;
+
+
+    }
+
+    .conteudo-m {
+
+    }
+    
+    .conteudo-tkp-a {
+        margin-top: 10px;
+
+    }
+
+
+    .conteudo-tkp-b {
+         margin-top: 20px;
+    }
+
+    .conteudo-tkp-c {
+        width: 30%;
+        margin-top: 70px;
+    }
+
+    .tkp-conteudo-a {
+        visibility: hidden;
+    }
+
+    .tkp-conteudo-b {
+        visibility: hidden;
+    }
+}
